@@ -1,37 +1,137 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fU2-k5-LyY">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <scene sceneID="o6Z-Hh-b0H">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller id="fU2-k5-LyY" customClass="InterfaceController">
+                    <items>
+                        <label alignment="center" text="Fifth Avenue" textAlignment="center" id="BWN-Ow-bgV">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <group width="1" alignment="left" id="xdY-0o-toK">
+                            <items>
+                                <label width="61.5" alignment="left" text="Device" id="Sp5-NL-sk3">
+                                    <color key="textColor" red="0.34869201399999999" green="0.94517121209999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Units" id="joG-7u-TRj">
+                                    <color key="textColor" red="0.34869201399999999" green="0.94517121209999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="left" id="040-G0-PV8">
+                            <items>
+                                <tableRow identifier="ProductDetails" id="RyF-Fq-L7I" customClass="ProductDetails">
+                                    <group key="rootItem" width="1" height="28.5" alignment="left" id="ewK-va-5ru">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="iPad" textAlignment="center" baselineAdjustment="alignCenters" id="pXu-qj-Ohq">
+                                                <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                                            </label>
+                                            <label alignment="right" verticalAlignment="center" text="0" textAlignment="center" baselineAdjustment="alignCenters" id="1Wd-S5-rPc">
+                                                <color key="textColor" red="0.1137254902" green="0.69411764710000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="productCount" destination="1Wd-S5-rPc" id="puD-nD-5Gc"/>
+                                        <outlet property="productName" destination="pXu-qj-Ohq" id="u9w-j7-Syh"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="productTable" destination="040-G0-PV8" id="3ES-UZ-Xxi"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="326"/>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="HJX-Ne-g7X">
+            <objects>
+                <controller identifier="DetailInterfaceController" id="SBG-i0-6BB" customClass="DetailInterfaceController">
+                    <items>
+                        <label alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="yNh-dn-8aI">
+                            <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <group width="1" widthAdjustment="2" alignment="center" verticalAlignment="center" id="oXu-Ke-uRk">
+                            <items>
+                                <label width="60" alignment="center" verticalAlignment="center" text="0" textAlignment="center" baselineAdjustment="alignCenters" id="HaP-uK-ifc">
+                                    <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCallout"/>
+                                </label>
+                                <button width="38" alignment="right" verticalAlignment="center" title="+" id="4nd-ft-Hj1">
+                                    <color key="titleColor" red="0.1137254902" green="0.69411764710000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="addButtonAction:" destination="SBG-i0-6BB" id="jQz-SJ-89X"/>
+                                    </connections>
+                                </button>
+                                <button width="38" alignment="left" verticalAlignment="center" title="-" id="1FD-VG-d2E">
+                                    <color key="titleColor" red="0.1137254902" green="0.69411764710000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="22"/>
+                                    <connections>
+                                        <action selector="substractButtonAction:" destination="SBG-i0-6BB" id="ToE-Cc-ySy"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" height="32.5" alignment="center" verticalAlignment="bottom" title="Save" id="g7i-JZ-pn7">
+                            <fontDescription key="font" type="system" pointSize="19"/>
+                            <connections>
+                                <action selector="saveButtonAction:" destination="SBG-i0-6BB" id="bLt-KT-Bi9"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="addButton" destination="4nd-ft-Hj1" id="of3-zg-PkT"/>
+                        <outlet property="resultLabel" destination="HaP-uK-ifc" id="Fjb-Gg-Qsm"/>
+                        <outlet property="saveButton" destination="g7i-JZ-pn7" id="QU7-j6-IxG"/>
+                        <outlet property="substractButton" destination="1FD-VG-d2E" id="hNQ-KA-3Kc"/>
+                        <outlet property="titleLabel" destination="yNh-dn-8aI" id="efe-Xg-boo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="464" y="341"/>
         </scene>
         <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <scene sceneID="zx2-a3-06H">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <notificationController id="O4M-Pp-8pr">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Alert Label" id="oWW-xq-q2Z"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="lqx-4c-3ew"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="notificationAlertLabel" destination="oWW-xq-q2Z" id="fWk-eF-Dze"/>
+                        <segue destination="g5D-UD-aQE" kind="relationship" relationship="dynamicNotificationInterface" id="ffD-Bn-KM1"/>
                     </connections>
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
         <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <scene sceneID="oG4-1s-v8V">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="g5D-UD-aQE" customClass="NotificationController"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

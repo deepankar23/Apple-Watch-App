@@ -21,6 +21,12 @@
 		70347D821F7A28CB00B92B23 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70347D811F7A28CB00B92B23 /* ExtensionDelegate.m */; };
 		70347D851F7A28CB00B92B23 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70347D841F7A28CB00B92B23 /* NotificationController.m */; };
 		70347D871F7A28CB00B92B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70347D861F7A28CB00B92B23 /* Assets.xcassets */; };
+		70347D9A1F7A290900B92B23 /* ProductDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70347D991F7A28FF00B92B23 /* ProductDetailTableViewCell.m */; };
+		70347D9F1F7A29C200B92B23 /* DetailInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70347D9E1F7A29BB00B92B23 /* DetailInterfaceController.m */; };
+		70347DA31F7A29F700B92B23 /* ProductDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 70347DA21F7A29F700B92B23 /* ProductDetails.m */; };
+		70347DA81F7A2AAB00B92B23 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70347DA71F7A2AAA00B92B23 /* StoreKit.framework */; };
+		70347DAA1F7A2AAF00B92B23 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70347DA91F7A2AAF00B92B23 /* GameKit.framework */; };
+		70347DAC1F7A2AB500B92B23 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70347DAB1F7A2AB500B92B23 /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +96,18 @@
 		70347D861F7A28CB00B92B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70347D881F7A28CB00B92B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70347D891F7A28CB00B92B23 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		70347D981F7A28FF00B92B23 /* ProductDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailTableViewCell.h; sourceTree = "<group>"; };
+		70347D991F7A28FF00B92B23 /* ProductDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailTableViewCell.m; sourceTree = "<group>"; };
+		70347D9D1F7A29BB00B92B23 /* DetailInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailInterfaceController.h; sourceTree = "<group>"; };
+		70347D9E1F7A29BB00B92B23 /* DetailInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailInterfaceController.m; sourceTree = "<group>"; };
+		70347DA11F7A29F700B92B23 /* ProductDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetails.h; sourceTree = "<group>"; };
+		70347DA21F7A29F700B92B23 /* ProductDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetails.m; sourceTree = "<group>"; };
+		70347DA41F7A2A6100B92B23 /* iWatchPOC WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iWatchPOC WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		70347DA51F7A2A8C00B92B23 /* AppleWatchPOC WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AppleWatchPOC WatchKit App.entitlements"; sourceTree = "<group>"; };
+		70347DA71F7A2AAA00B92B23 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		70347DA91F7A2AAF00B92B23 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		70347DAB1F7A2AB500B92B23 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		70347DAD1F7A2AD400B92B23 /* AppleWatchPOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleWatchPOC.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70347DAC1F7A2AB500B92B23 /* WatchConnectivity.framework in Frameworks */,
+				70347DAA1F7A2AAF00B92B23 /* GameKit.framework in Frameworks */,
+				70347DA81F7A2AAB00B92B23 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +138,7 @@
 				70347D6D1F7A28CB00B92B23 /* Apple Watch App WatchKit App */,
 				70347D7C1F7A28CB00B92B23 /* Apple Watch App WatchKit Extension */,
 				70347D541F7A28CA00B92B23 /* Products */,
+				70347DA61F7A2AAA00B92B23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,10 +155,12 @@
 		70347D551F7A28CA00B92B23 /* Apple Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				70347DAD1F7A2AD400B92B23 /* AppleWatchPOC.entitlements */,
 				70347D561F7A28CA00B92B23 /* AppDelegate.h */,
 				70347D571F7A28CA00B92B23 /* AppDelegate.m */,
 				70347D591F7A28CA00B92B23 /* ViewController.h */,
 				70347D5A1F7A28CA00B92B23 /* ViewController.m */,
+				70347D971F7A28FF00B92B23 /* Product Detail Cell */,
 				70347D5C1F7A28CA00B92B23 /* Main.storyboard */,
 				70347D5F1F7A28CA00B92B23 /* Assets.xcassets */,
 				70347D611F7A28CA00B92B23 /* LaunchScreen.storyboard */,
@@ -149,6 +173,7 @@
 		70347D6D1F7A28CB00B92B23 /* Apple Watch App WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				70347DA51F7A2A8C00B92B23 /* AppleWatchPOC WatchKit App.entitlements */,
 				70347D6E1F7A28CB00B92B23 /* Interface.storyboard */,
 				70347D711F7A28CB00B92B23 /* Assets.xcassets */,
 				70347D731F7A28CB00B92B23 /* Info.plist */,
@@ -159,17 +184,49 @@
 		70347D7C1F7A28CB00B92B23 /* Apple Watch App WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				70347DA41F7A2A6100B92B23 /* iWatchPOC WatchKit Extension.entitlements */,
 				70347D7D1F7A28CB00B92B23 /* InterfaceController.h */,
 				70347D7E1F7A28CB00B92B23 /* InterfaceController.m */,
+				70347D9C1F7A29BB00B92B23 /* Product Detail Page */,
 				70347D801F7A28CB00B92B23 /* ExtensionDelegate.h */,
 				70347D811F7A28CB00B92B23 /* ExtensionDelegate.m */,
 				70347D831F7A28CB00B92B23 /* NotificationController.h */,
 				70347D841F7A28CB00B92B23 /* NotificationController.m */,
+				70347DA11F7A29F700B92B23 /* ProductDetails.h */,
+				70347DA21F7A29F700B92B23 /* ProductDetails.m */,
 				70347D861F7A28CB00B92B23 /* Assets.xcassets */,
 				70347D881F7A28CB00B92B23 /* Info.plist */,
 				70347D891F7A28CB00B92B23 /* PushNotificationPayload.apns */,
 			);
 			path = "Apple Watch App WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		70347D971F7A28FF00B92B23 /* Product Detail Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70347D981F7A28FF00B92B23 /* ProductDetailTableViewCell.h */,
+				70347D991F7A28FF00B92B23 /* ProductDetailTableViewCell.m */,
+			);
+			path = "Product Detail Cell";
+			sourceTree = "<group>";
+		};
+		70347D9C1F7A29BB00B92B23 /* Product Detail Page */ = {
+			isa = PBXGroup;
+			children = (
+				70347D9D1F7A29BB00B92B23 /* DetailInterfaceController.h */,
+				70347D9E1F7A29BB00B92B23 /* DetailInterfaceController.m */,
+			);
+			path = "Product Detail Page";
+			sourceTree = "<group>";
+		};
+		70347DA61F7A2AAA00B92B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70347DAB1F7A2AB500B92B23 /* WatchConnectivity.framework */,
+				70347DA91F7A2AAF00B92B23 /* GameKit.framework */,
+				70347DA71F7A2AAA00B92B23 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +365,7 @@
 			files = (
 				70347D5B1F7A28CA00B92B23 /* ViewController.m in Sources */,
 				70347D661F7A28CA00B92B23 /* main.m in Sources */,
+				70347D9A1F7A290900B92B23 /* ProductDetailTableViewCell.m in Sources */,
 				70347D581F7A28CA00B92B23 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,8 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70347DA31F7A29F700B92B23 /* ProductDetails.m in Sources */,
 				70347D821F7A28CB00B92B23 /* ExtensionDelegate.m in Sources */,
 				70347D7F1F7A28CB00B92B23 /* InterfaceController.m in Sources */,
+				70347D9F1F7A29C200B92B23 /* DetailInterfaceController.m in Sources */,
 				70347D851F7A28CB00B92B23 /* NotificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
